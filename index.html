@@ -1,108 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
+    <!-- META Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Genereaza si citeste coduri QR. Descopera aplicatiile si utilitatile codurilor QR intr-un mod simplu si eficient. Incepe de astazi!">
+    <meta name="keywords" content="QR, Cod QR, tehnologie, generare, scanare, informatii QR, QR Online">
     <meta name="author" content="Cosmin Panescu">
-    <meta name="description" content="I am a FrontEnd Developer based in Romania. I like to build things for the web and I build projects to learn how code works">
     <!-- Website Icon -->
-    <link rel="icon" href="/Resurse/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="resources/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="resources/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <!-- Website Title -->
-    <title>Proiect TW</title>
+    <title>Lumea QR</title>
 </head>
 <body>
     
-    <header>
-        <!-- nav menu -->
-        <ul id="nav_menu">
-            <li><a href="#section1"></a>Acasa</li>
-            <li><a href="#section2"></a>Despre</li>
-            <li><a href="#section3"></a>Proiecte</li>
-            <li><a href="#section4"></a>Contact</li>
-        </ul>
-
-        <!-- page title -->
-        <h1>Cosmin Panescu</h1>
-
-        <!-- sections -->
-        <section id="section1">
-            <h2>Sectiunea 1</h2>
-            <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Integer ut dignissim dolor. <i>Ut quis dapibus tellus </i>, eget luctus odio. Donec nec magna consequat, ornare ex non, ullamcorper libero em ipsum dolor sit amet, consectetur adipiscing elit. Integer ut dignissim dolor. Ut quis dapibus tellus, eget luctus odio. <q>Donec nec magna consequat, ornare ex non, ullamcorper libero</q></p>
-            <ol>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ol>
-
-            <figure>
-                <figcaption>Imagine folosind "FIGURE"</figcaption>
-                <picture>
-                    <source media="(max-width: 768px)" srcset="imaginemica.jpg">
-                    <source media="(max-width: 1024px)" srcset="imaginemedie.jpg">
-                    <img src="imaginemare.jpg" alt="Descrierea imaginii / alternativa pentru imagine">
-                </picture>
-            </figure>
-        </section>
-
-        <section id="section2">
-            <h2>Sectiunea 2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut dignissim dolor. Ut quis dapibus tellus, eget luctus odio. Donec nec magna consequat, ornare ex non, ullamcorper libero</p>
-            <ol>
-                <li>Excel</li>
-                <li>SQL</li>
-                <li>Python</li>
-            </ol>
-
-            <a href="https://cosminpanescu.com" target="_blank">Site-ul meu</a>
-
-            <details>
-                <summary>Ce este HTML?</summary>
-                <p>HTML (HyperText Markup Language) este limbajul utilizat pentru a crea si structura continutul unei pagini web.</p>
-            </details>
-        
-            <details>
-                <summary>Ce este CSS?</summary>
-                <p>CSS (Cascading Style Sheets) este folosit pentru a stiliza si formata continutul HTML, cum ar fi culorile, fonturile si layout-ul paginii.</p>
-            </details>
-        
-            <details>
-                <summary>Reducere 20% la Laptop-uri</summary>
-                <p>Acum poti obtine un discount de 20% la noua gama de laptop-uri, pana pe 1 ianuarie 2024.</p>
-            </details>
-        </section>
-
-        <section id="section3">
-            <h2>Sectiunea 3</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut dignissim dolor. Ut quis dapibus tellus, eget luctus odio. Donec nec magna consequat, ornare ex non, ullamcorper libero</p>
-            <ol>
-                <li>Word</li>
-                <li>Powerpoint</li>
-                <li>Excel</li>
-            </ol>
-
-            <iframe src="https://www.youtube.com/embed/watch?v=UIoHsfOk9dE&ab_channel=ClassicMusic" name="video-iframe" height="300" width="500" title="Youtube iframe"></iframe>
-            <a href="https://youtu.be/eNwtmbPUIoU?si=fser6OX2t1LCTKLo" target="video-iframe">Flying over Italy</a>
-            <a href="https://youtu.be/xbJZIAilszI?si=my7aF1cS-zh1cm-O" target="video-iframe">Summer Vibes Mix</a>
-        </section>
-
-        <section id="section4">
-            <h2>Sectiunea 4</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut dignissim dolor. Ut quis dapibus tellus, eget luctus odio. Donec nec magna consequat, ornare ex non, ullamcorper libero</p>
-            <ol>
-                <li>Mate</li>
-                <li>Info</li>
-                <li>Programare</li>
-            </ol>
-
-            <a href="document.pdf" download>Download PDF</a>
-        </section>
-
+    <header class="header" id="header">
+        <h1>Lumea ta <span>QR</span></h1>
     </header>
 
-    <main></main>
+    <!-- NAVIGATION MENU -->
+    <nav class="meniu-navigare">
+        <li>
+            <div>Acasa</div>
+            <ul>
+                <li><a href="#introducere">Introducere</a></li>
+                <li><a href="#utilizari">Utilizari QR</a></li>
+                <li><a href="#invata">Invata cu noi!</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <div>Coduri QR</div>
+            <ul>
+                <li><a href="generare_qr.html">Genereaza QR</a></li>
+                <li><a href="scanare_qr.html">Scaneaza QR</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="contact.html">Contact</a>
+        </li>
+
+        <li>
+            <a href="">Inregistrare</a>
+        </li>
+    </nav>
+
+    <!-- MAIN SECTION -->
+    <main>
+        <div>
+            <section id="introducere">
+                <h2>Introducere in Lumea QR</h2>
+                <p>Bine ai venit pe <b>Lumea QR</b>, destinatia ta de incredere pentru a explora fascinanta <b>tehnologie a codurilor QR</b>. Daca te-ai intrebat vreodata ce sunt aceste mici blocuri negre si albe si cum pot revolutiona modul in care interactionăm cu lumea digitala, esti in locul potrivit.</p>
+
+                <h2>Ce sunt codurile QR?</h2>
+                <p><dfn>Codurile <abbr title="Quick Response">QR</abbr></dfn> sunt o forma de coduri de bare bidimensionale, inventate în Japonia. Aceste mici simboluri au devenit omniprezente in viata noastra si au o gama variata de utilizări in toate domeniile. Cu capacitatea de a stoca informatii variate, de la <abbr title="Uniform Resource Locator">URL</abbr>-uri la date de contact sau chiar mesaje text, <b>codurile <abbr title="Quick Response">QR</abbr> reprezinta o modalitate eficienta de a transfera si accesa informatii</b>.</p>
+
+                <div id="introducere-imagine">
+                    <figure>
+                        <figcaption>Scanare Cod QR</figcaption>
+                        <picture>
+                            <source srcset="resources/images/qr-200x200.jpg" media="(max-width: 768px)"/>
+                            <source srcset="resources/images/qr-640x350.jpg" media="(max-width: 1200px)"/>
+                            <img src="resources/images/qr.jpg" alt="Imagine - Scanare Cod QR">
+                        </picture>
+                    </figure>
+                </div>
+            </section>
+
+            <section id="utilizari">
+                <h2>Utilizarile codurilor QR</h2>
+                <p><dfn>Codurile QR</dfn> sunt o tehnologie versatilă care se găsește în numeroase domenii și au o gamă variată de utilizări și aplicații. Acestea sunt doar câteva exemple ale modurilor în care codurile QR pot aduce valoare:</p>
+                <details>
+                    <summary>Marketing si Publicitate</summary>
+                    <p>Codurile QR sunt adesea utilizate în campanii de marketing pentru a furniza informatii suplimentare, cupoane de reduceri sau link-uri catre site-uri web.
+                    </p>
+                </details>
+                <details>
+                    <summary>Comertul Electronic</summary>
+                    <p>În mediul online, codurile QR pot fi utilizați pentru a simplifica plățile și procesele de verificare a produselor.
+                    </p>
+                </details>
+                <details>
+                    <summary>Sănătate și Servicii Medicale</summary>
+                    <p>Codurile QR sunt folosite pentru a stoca informații medicale personale și istoricul medical, permitând profesioniștilor din domeniul sănătății să acceseze rapid date critice.
+                    </p>
+                </details>
+                <details>
+                    <summary>Educație</summary>
+                    <p> În educație, codurile QR pot fi folosite pentru a oferi acces rapid la resurse suplimentare, precum documentație și tutoriale.
+                    </p>
+                </details>
+                <details>
+                    <summary>Turism și Călătorii</summary>
+                    <p> Ghiduri de turism interactive, hărți și informații locale pot fi accesate rapid prin scanarea codurilor QR.
+                    </p>
+                </details>
+                <details>
+                    <summary>Alimentație și Băuturi</summary>
+                    <p> Meniuri digitale și etichetele produselor sunt adesea echipate cu coduri QR pentru acces rapid la informații nutritionale și recomandări.
+                    </p>
+                </details>
+                <details>
+                    <summary>Automatizare la Distanță</summary>
+                    <p> În domeniul industrial, codurile QR sunt utilizate pentru a efectua mentenanța și diagnoza la distanță.
+                    </p>
+                </details>
+            </section>
+
+            <section id="invata">
+                <h2>Invata ceva nou astazi!</h2>
+                <p>Aici poti invata aspecte fundamentale despre codurile QR, care te vor ajuta sa intelegi mai bine aceasta tehnologie. </p>
+
+                <div class="taburi-iframe">
+                    <a href="https://www.youtube.com/embed/isb699KUVU4?si=DIWBa6TSzT3EQ1Cd" target="ifr-video">Strategii de Marketing folosind coduri QR</a>
+                    <a href="https://www.youtube.com/embed/7Y-eKur822k?si=LEfsxPvSRtT5XuXL" target="ifr-video" >Creeaza Coduri QR in Microsoft Office</a>
+                    <a href="https://www.youtube.com/embed/XS8ACikD2qs?si=DcxOCV3j3Ejut0NK" target="ifr-video" >Cum functioneaza Scan To Pay?</a><br/>
+                </div>
+        
+                <iframe name="ifr-video" width="560" height="315" src="https://www.youtube.com/embed/pamazHwk0hg?si=ACy62lZyW5iFglan" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                
+                <p>Daca vrei sa inveti mai multe despre codurile QR si sa devii un maestru al acestora, apasa chiar <a href="https://en.wikipedia.org/wiki/QR_code" target="_blank">aici</a></p>
+            </section>
+        </div>
+    </main>
 
     <footer>
-        <a href="#nav_menu">Catre inceputul paginii</a>
+        <a href="#">Catre inceputul paginii</a>
 
         <address>
             <p>Telefon: <a href="tel:+40799526060">0799 526 060</a></p>
@@ -111,7 +142,7 @@
             <p>Mesaje: <a href="https://wa.me/40799526060" target="_blank">WhatsApp</a></p>
         </address>
 
-        <small>&copy; <time datetime="2023-10-13">2023</time>Drepturi de autor - Vasile Cosmin Panescu</small>
+        <small>&copy; <time datetime="2023-10-13">2023</time> Drepturi de autor - Cosmin Vasile Panescu</small>
     </footer>
 
 </body>
