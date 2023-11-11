@@ -1,3 +1,56 @@
-body {
-    font-size: 16px;
+body{
+    --culoare-text:green;
+    --culoare-fundal:yellow;
+    --spatiere-pagina:100px;
+    --dimensiune-text:16px;
+    font-size: var(--dimensiune-text);
+
+
+    padding-left: var(--spatiere-pagina);
+    padding-right: var(--spatiere-pagina);
+    transition: padding 1s linear;
+    background-image: url('../imagini/back_vert_flori.png'), url('../imagini/background-bomboane.jpg');
+    background-attachment: scroll, fixed;
+    background-repeat: repeat-y, repeat;
+
+}
+
+
+p{
+    /*font-size: 9px;*/
+    color:var(--culoare-text)
+}
+
+ol{
+    color:var(--culoare-text)
+}
+
+#tehnologii {
+    list-style-image: url("../images/list-item.png");
+}
+
+#tehnologii>li {
+    transition: all .25s ease-in-out;
+}
+
+#tehnologii>li:nth-of-type(2n) {
+    color: gray;
+}
+
+#tehnologii>li:hover {
+    font-size: larger;
+}
+
+@media screen and (max-width:1100px) {
+    body{
+        --spatiere-pagina:40px;
+        --dimensiune-text:14px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    body{
+        --spatiere-pagina:10px;
+        --dimensiune-text:10px;
+    }
 }
