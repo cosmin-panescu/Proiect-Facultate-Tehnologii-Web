@@ -22,11 +22,13 @@
 
     <style>
         td, th{
-            border: 1px solid black;
+            border: 5px solid rgba(255, 255, 255, 0.332);
+            padding: 15px;
         }
 
         table {
             border-collapse: collapse;
+            font-size: 1.25em;
         }
     </style>    
 </head>
@@ -34,7 +36,7 @@
 <body>
     
     <header class="header" id="header">
-        <h1 style="background-color: aquamarine;font-style: italic;">Lumea ta <span>QR</span></h1>
+        <h1 style="font-style: italic;" id="main-title"><span>Lumea ta QR</span></h1>
     </header>
 
     <!-- NAVIGATION MENU -->
@@ -68,22 +70,22 @@
     </nav>
 
     <!-- MAIN SECTION -->
-    <main>
+    <main class="mb">
         <div>
             <section id="introducere">
                 <h2>Introducere in Lumea QR</h2>
-                <p>Bine ai venit pe <b>Lumea QR</b>, destinatia ta de incredere pentru a explora fascinanta <b>tehnologie a codurilor QR</b>. Daca te-ai intrebat vreodata ce sunt aceste mici blocuri negre si albe si cum pot revolutiona modul in care interactionăm cu lumea digitala, esti in locul potrivit.</p>
+                <p id="descriere-introducere" class="mb">Bine ai venit pe <b>Lumea QR</b>, destinatia ta de incredere pentru a explora fascinanta <b>tehnologie a codurilor QR</b>. Daca te-ai intrebat vreodata ce sunt aceste mici blocuri negre si albe si cum pot revolutiona modul in care interactionăm cu lumea digitala, esti in locul potrivit.</p>
 
                 <h2>Tehnologii similare tehnologiei QR</h2>
-                <input type="checkbox" id="schimba_lista">
+                <!-- <input type="checkbox" id="schimba_lista">
                 <ul>
                     <li>1</li>
                     <li>2</li>
                     <li>3</li>
                     <li>4</li>
                     <li>5</li>
-                </ul>
-                <ul id="tehnologii">
+                </ul> -->
+                <ul id="tehnologii" class="mb">
                     <li>Coduri de Bare</li>
                     <li>NFC</li>
                     <li>RFID</li>
@@ -92,9 +94,9 @@
                 </ul>
 
                 <h2>Ce sunt codurile QR?</h2>
-                <p id="descriere-qr"><dfn>Codurile <abbr title="Quick Response">QR</abbr></dfn> sunt o forma de coduri de bare bidimensionale, inventate în Japonia. Aceste mici simboluri au devenit omniprezente in viata noastra si au o gama variata de utilizări in toate domeniile. Cu capacitatea de a stoca informatii variate, de la <abbr title="Uniform Resource Locator">URL</abbr>-uri la date de contact sau chiar mesaje text, <b>codurile <abbr title="Quick Response">QR</abbr> reprezinta o modalitate eficienta de a transfera si accesa informatii</b>.</p>
+                <p id="descriere-qr" class="mb"><dfn>Codurile <abbr title="Quick Response">QR</abbr></dfn> sunt o forma de coduri de bare bidimensionale, inventate în Japonia. Aceste mici simboluri au devenit omniprezente in viata noastra si au o gama variata de utilizări in toate domeniile. Cu capacitatea de a stoca informatii variate, de la <abbr title="Uniform Resource Locator">URL</abbr>-uri la date de contact sau chiar mesaje text, <b>codurile <abbr title="Quick Response">QR</abbr> reprezinta o modalitate eficienta de a transfera si accesa informatii</b>.</p>
 
-                <div id="introducere-imagine">
+                <div id="introducere-imagine" class="mb">
                     <figure>
                         <figcaption>Scanare Cod QR</figcaption>
                         <picture>
@@ -106,7 +108,7 @@
                 </div>
             </section>
 
-            <section id="utilizari">
+            <section id="utilizari" class="mb">
                 <h2>Utilizarile codurilor QR</h2>
                 <p><dfn>Codurile QR</dfn> sunt o tehnologie versatilă care se găsește în numeroase domenii și au o gamă variată de utilizări și aplicații. Acestea sunt doar câteva exemple ale modurilor în care codurile QR pot aduce valoare:</p>
                 <details>
@@ -146,9 +148,9 @@
                 </details>
             </section>
 
-            <section id="invata">
-                <h2>Invata ceva nou astazi!</h2>
-                <p>Aici poti invata aspecte fundamentale despre codurile QR, care te vor ajuta sa intelegi mai bine aceasta tehnologie. </p>
+            <section id="invata" class="mb">
+                <h2 class="da">Invata ceva nou astazi!</h2>
+                <p class="invata-descriere">Aici poti invata aspecte fundamentale despre codurile QR, care te vor ajuta sa intelegi mai bine aceasta tehnologie. </p>
 
                 <div class="taburi-iframe">
                     <a href="https://www.youtube.com/embed/isb699KUVU4?si=DIWBa6TSzT3EQ1Cd" target="ifr-video">Strategii de Marketing folosind coduri QR</a>
@@ -160,7 +162,7 @@
                 <iframe name="ifr-video" width="560" height="315" src="https://www.youtube.com/embed/pamazHwk0hg?si=ACy62lZyW5iFglan" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
                 
-                <p>Daca vrei sa inveti mai multe despre codurile QR si sa devii un maestru al acestora, apasa chiar <a href="https://en.wikipedia.org/wiki/QR_code" target="_blank">aici</a></p>
+                <p class="mb invata-suplimentar">Daca vrei sa inveti mai multe despre codurile QR si sa devii un maestru al acestora, apasa chiar <a href="https://en.wikipedia.org/wiki/QR_code" target="_blank">aici</a></p>
             </section>
 
             <section id="evolutie">
@@ -213,7 +215,7 @@
 
     <!-- FOOTER -->
     <footer>
-        <a href="#">Catre inceputul paginii</a>
+        <!-- <a href="#">Catre inceputul paginii</a> -->
 
         <address>
             <a href="tel:+40799526060">Telefon</a>

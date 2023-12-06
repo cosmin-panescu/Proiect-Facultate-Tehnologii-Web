@@ -1,40 +1,77 @@
 body{
-    --culoare-text:green;
+    --culoare-text:rgb(48, 0, 48);
     --culoare-fundal:yellow;
-    --spatiere-pagina:100px;
+    --spatiere-pagina:50px;
     --dimensiune-text:16px;
     font-size: var(--dimensiune-text);
-
 
     padding-left: var(--spatiere-pagina);
     padding-right: var(--spatiere-pagina);
     transition: padding 1s linear;
 
-    /* VARIANTA 1 */
-    /* --culoare-gradient: rgba(255, 255, 255,0.7);
-    background-image: linear-gradient(to right, transparent, var(--culoare-gradient) 6%, var(--culoare-gradient) 94%, transparent), url('../images/qr.jpg');
-    background-attachment: scroll, fixed;
-    background-repeat: repeat-y, repeat; */
-
-    /* VARIANTA 2 */
-    background-image: url("../images/qr.jpg");
+    background-image: url("../images/background-image.webp");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
-main {
+ 
+main{
     background: rgba(255,255,255, 0.8);
-    padding: 0 10%;
-    border: 5px solid white;
+    padding: 3%;
+    border-radius: 15px;
+}
+
+main div {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-areas: "z-introducere z-introducere"
+    "z-invata z-utilizari"
+    "z-evolutie z-evolutie";
+}
+
+/* main> div *{
+    outline: 1px solid purple;
+} */
+
+h1 span {   
+    display: inline-block;
+    animation-name: plimba_text;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.714);
+    color: rgb(53, 0, 53);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.mb {
+    margin-bottom: 100px;
+}
+
+#descriere-introducere::selection {
+    color: purple;
+    background-color: gray;
 }
 
 #descriere-qr {
     column-count: 2;
+    column-gap: 25px;
 }
 
-#utilizari {
-    background: radial-gradient(circle at 30%, rgb(234, 3, 3), rgb(33, 243, 79));
+#evolutie {
+    background: rgb(40,0,69);
+    background: linear-gradient(90deg, rgb(168, 46, 255) 0%, rgba(87,8,144,1) 50%, rgba(40,0,69,1) 100%);
+    padding: 25px;
+    border-radius: 10px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #schimba_lista:checked + ul {
@@ -42,7 +79,6 @@ main {
 }
 
 p{
-    /*font-size: 9px;*/
     color:var(--culoare-text)
 }
 
@@ -50,9 +86,50 @@ ol{
     color:var(--culoare-text)
 }
 
+h2 {
+    display: inline-block;
+    border-bottom: 5px solid purple;
+    transition: all .25s ease;
+    padding: 7.5px;
+    border-radius: 5px;
+    margin-bottom: 1.85em;
+}
+
+h2:hover {
+    background-color: purple;
+}
+
+#utilizari {
+    background-color: rgba(255, 255, 255, 0.363);
+    padding: 15px;
+    border-radius: 7.5px;
+}
+
+#utilizari details {
+    margin-bottom: 10px;
+}
+
+#invata {
+    background-color: rgba(255, 255, 255, 0.363);
+    padding: 15px;
+    border-radius: 7.5px;
+}
+
+#invata .taburi-iframe {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
 #tehnologii {
     list-style-image: url("../images/list-item.png");
-    background-image: linear-gradient(to left, red, blue, green);
+    background: rgb(40,0,69);
+    background: linear-gradient(90deg, rgba(40,0,69,1) 0%, rgba(87,8,144,1) 50%, rgb(168, 46, 255) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 25px;
+    border-radius: 10px;
 }
 
 #tehnologii>li {
@@ -60,11 +137,82 @@ ol{
 }
 
 #tehnologii>li:nth-of-type(2n) {
-    color: gray;
+    color: rgb(255, 255, 255);
 }
 
 #tehnologii>li:hover {
-    font-size: larger;
+    transform: scale(1.1);
+}
+
+#introducere-imagine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#introducere-imagine img {
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
+    transition: all .25s ease;
+}
+
+#introducere-imagine img:hover {
+    box-shadow: none;
+    transform: translateX(5px) translateY(5px);
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.714);
+    padding: 0 15px 15px 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    align-items: center;justify-content: center;
+}   
+
+footer address {
+    display: flex;
+    gap: 3em;
+    background-color: rgba(255, 255, 255, 0.608);
+    padding: 15px 30px;
+    border-radius: 0 0 10px 10px;
+}
+
+footer address a {
+    color: black;
+    text-decoration: none;
+}
+
+#introducere{
+    grid-area: z-introducere;
+}
+#utilizari{
+    grid-area: z-utilizari;
+}
+#invata{
+    grid-area: z-invata;
+}
+#evolutie{
+    grid-area: z-evolutie;
+}
+
+@keyframes plimba_text {
+    0% {
+        transform: translateY(0%);
+    }
+    25% {
+        transform: translateY(-25%);
+    }
+    50%{
+        transform: translateY(0%);
+    }
+    75% {
+        transform: translateY(25%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 @media screen and (max-width:1100px) {
