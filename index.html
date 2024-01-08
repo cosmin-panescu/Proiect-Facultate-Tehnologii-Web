@@ -17,6 +17,7 @@
     <meta name="theme-color" content="#ffffff">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/navMenu.css">
     <!-- Website Title -->
     <title>Lumea QR</title>
 
@@ -35,39 +36,44 @@
 
 <body>
     
-    <header class="header" id="header">
-        <h1 style="font-style: italic;" id="main-title"><span>Lumea ta QR</span></h1>
-    </header>
-
+    
     <!-- NAVIGATION MENU -->
     <nav class="meniu-navigare">
-        <ul>
+        <label id="hamburger" for="ch-meniu">
+            <img src="resources/images/Hamburger_icon_alb.png" alt="Hamburger Menu">
+        </label>
+        <input type="checkbox" id="ch-meniu" />
+        <ul class="meniu">
             <li>
                 <div>Acasa</div>
-                <ul>
+                <ul class="submenu">
                     <li><a href="#introducere">Introducere</a></li>
                     <li><a href="#utilizari">Utilizari QR</a></li>
                     <li><a href="#invata">Invata cu noi!</a></li>
                 </ul>
             </li>
-
+            
             <li>
                 <div>Coduri QR</div>
-                <ul>
+                <ul class="submenu">
                     <li><a href="generare_qr.html">Genereaza QR</a></li>
                     <li><a href="scanare_qr.html">Scaneaza QR</a></li>
                 </ul>
             </li>
-
+            
             <li>
                 <a href="contact.html">Contact</a>
             </li>
-
+            
             <li>
                 <a href="">Inregistrare</a>
             </li>
         </ul>
     </nav>
+    
+    <header class="header" id="header">
+        <h1 style="font-style: italic;" id="main-title"><span>Lumea ta QR</span></h1>
+    </header>
 
     <!-- MAIN SECTION -->
     <main class="mb">
@@ -215,7 +221,7 @@
 
     <!-- FOOTER -->
     <footer>
-        <!-- <a href="#">Catre inceputul paginii</a> -->
+        <a href="#" id="link-top" title="Catre inceputul paginii"><span></span></a>
 
         <address>
             <a href="tel:+40799526060">Telefon</a>
