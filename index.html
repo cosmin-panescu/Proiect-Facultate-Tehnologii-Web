@@ -18,12 +18,14 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/navMenu.css">
+    <!-- JS -->
+    <script defer src="script.js"></script>
     <!-- Website Title -->
     <title>Lumea QR</title>
 
     <style>
         td, th{
-            border: 5px solid rgba(255, 255, 255, 0.332);
+            border: 5px solid rgba(0, 0, 0, 0.332);
             padding: 15px;
         }
 
@@ -79,6 +81,8 @@
     <main class="mb">
         <div>
             <section id="introducere">
+                <button id="afiseazaData" class="btn">Afișează Data Curentă</button>
+                <br/>
                 <h2>Introducere in Lumea QR</h2>
                 <p id="descriere-introducere" class="mb">Bine ai venit pe <b>Lumea QR</b>, destinatia ta de incredere pentru a explora fascinanta <b>tehnologie a codurilor QR</b>. Daca te-ai intrebat vreodata ce sunt aceste mici blocuri negre si albe si cum pot revolutiona modul in care interactionăm cu lumea digitala, esti in locul potrivit.</p>
 
@@ -218,6 +222,98 @@
             </section>
         </div>
     </main>
+
+    <section id="sectiune-tabel">
+        <button class="btn" id="marcheaza_randuri">Marcheaza Carti Florin Preda</button>
+        <button class="btn" id="numara_randuri">Numara randuri tabel </button>
+
+        <table id="tabel-carti">
+            <thead>
+                <tr>
+                    <th>Titlu</th>
+                    <th>Autor</th>
+                    <th>Editura</th>
+                    <th>Nr. Pagini</th>
+                    <th>Pret</th>
+                </tr>
+            </thead>
+            <tbody id="body-tabel-carti">
+                <!-- Randuri -->
+                <tr>
+                    <td>QR in Afaceri</td>
+                    <td>Elena Radu</td>
+                    <td>Lumina</td>
+                    <td>420</td>
+                    <td>54</td>
+                </tr>
+                <tr>
+                    <td>Arta Digitala</td>
+                    <td>Andrei Mihailescu</td>
+                    <td>Horizon</td>
+                    <td>253</td>
+                    <td>35.5</td>
+                </tr>
+                <tr>
+                    <td>Secretele Codurilor QR</td>
+                    <td>Florin Preda</td>
+                    <td>Stellaris</td>
+                    <td>422</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Coduri QR</td>
+                    <td>Radu Dumitrescu</td>
+                    <td>Stellaris</td>
+                    <td>331</td>
+                    <td>40.5</td>
+                </tr>
+                <tr>
+                    <td>Totul despre QR</td>
+                    <td>Florin Preda</td>
+                    <td>Quantum</td>
+                    <td>392</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Misterele Codurilor QR</td>
+                    <td>Adrian Vasile</td>
+                    <td>Parnassus</td>
+                    <td>190</td>
+                    <td>31.1</td>
+                </tr>
+                <tr>
+                    <td>Universul QR</td>
+                    <td>Maria Ionescu</td>
+                    <td>Stellaris</td>
+                    <td>439</td>
+                    <td>48.5</td>
+                </tr>
+                <tr>
+                    <td>Infruntand Viitorul Digital</td>
+                    <td>Florin Preda</td>
+                    <td>Stellaris</td>
+                    <td>315</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>De ce sa alegi QR?</td>
+                    <td>Ana Popa-Dumitru</td>
+                    <td>Alchemia</td>
+                    <td>93</td>
+                    <td>14.5</td>
+                </tr>
+                <tr>
+                    <td>QR pentru copii</td>
+                    <td>Florin Preda</td>
+                    <td>Nebula</td>
+                    <td>156</td>
+                    <td>38.75</td>
+                </tr>
+            </tbody>
+        </table>        
+    </section>
+
+    </div>
 
     <!-- FOOTER -->
     <footer>
